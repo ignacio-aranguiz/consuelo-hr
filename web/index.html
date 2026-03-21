@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consuelo Aránguiz Soto — Experta en Selección de Personal</title>
+  <meta name="description" content="Psicóloga Laboral con 11 años de experiencia independiente en reclutamiento, selección de personal y evaluación psicolaboral por competencias. Servicio 100% remoto para todo Chile." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── Variables ─────────────────────────────────────────── */
+    :root {
+      --teal:       #2A6B6B;
+      --teal-dark:  #1E5050;
+      --teal-light: #EAF3F3;
+      --terra:      #C4704F;
+      --terra-dark: #A55A3C;
+      --sand:       #F5F0E8;
+      --gray-bg:    #F8F8F6;
+      --text:       #1C1C1C;
+      --text-mid:   #4A4A4A;
+      --text-light: #6B6B6B;
+      --white:      #FFFFFF;
+      --border:     #E0DAD0;
+
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans:  'Inter', system-ui, sans-serif;
+
+      --max-w: 1100px;
+      --radius: 12px;
+    }
+
+    /* ── Reset ─────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Utilidades ─────────────────────────────────────────── */
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+    .section    { padding: 88px 0; }
+    .section-alt { background: var(--gray-bg); }
+    .section-sand { background: var(--sand); }
+
+    .tag {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 16px;
+    }
+    h2.section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 1rem;
+      color: var(--text-mid);
+      max-width: 560px;
+      margin-bottom: 56px;
+    }
+
+    /* ── Nav ────────────────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--teal);
+      letter-spacing: -0.01em;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-mid);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-cta {
+      background: var(--terra);
+      color: var(--white) !important;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--terra-dark) !important; }
+
+    /* ── Hero ───────────────────────────────────────────────── */
+    #hero {
+      background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 60%, #3A8080 100%);
+      color: var(--white);
+      padding: 96px 0 80px;
+      overflow: hidden;
+      position: relative;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: rgba(255,255,255,0.85);
+    }
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.9);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--terra);
+      color: var(--white);
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--terra-dark); transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: var(--white);
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.2); }
+
+    .hero-photo-wrap {
+      position: relative;
+    }
+    .hero-photo {
+      width: 100%;
+      max-width: 340px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 5px solid rgba(255,255,255,0.2);
+      margin: 0 auto;
+      box-shadow: 0 32px 64px rgba(0,0,0,0.25);
+    }
+    .hero-photo-ring {
+      position: absolute;
+      inset: -12px;
+      border-radius: 50%;
+      border: 2px dashed rgba(255,255,255,0.2);
+    }
+
+    /* ── Stats ──────────────────────────────────────────────── */
+    #stats {
+      background: var(--teal-dark);
+      padding: 48px 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 24px 16px;
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--font-serif);
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-num span { color: var(--terra); }
+    .stat-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Sobre mí ───────────────────────────────────────────── */
+    #sobre-mi .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .sobre-text p {
+      color: var(--text-mid);
+      margin-bottom: 20px;
+      font-size: 0.975rem;
+    }
+    .sobre-text p:last-child { margin-bottom: 0; }
+    .sobre-text strong { color: var(--text); }
+    .credenciales {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .credencial-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .cred-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: var(--teal-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+    .cred-title {
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .cred-detail {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+    .cred-badge {
+      display: inline-block;
+      background: var(--teal-light);
+      color: var(--teal-dark);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-top: 4px;
+    }
+
+    /* ── Servicios ──────────────────────────────────────────── */
+    #servicios .servicios-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .servicio-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      transition: box-shadow 0.25s, transform 0.2s, border-color 0.2s;
+    }
+    .servicio-card:hover {
+      box-shadow: 0 12px 40px rgba(42,107,107,0.12);
+      transform: translateY(-3px);
+      border-color: var(--teal);
+    }
+    .servicio-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: var(--teal-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+    .servicio-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    .servicio-card p {
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+    .servicio-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .servicio-list li {
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      padding-left: 18px;
+      position: relative;
+    }
+    .servicio-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    /* ── Metodología ────────────────────────────────────────── */
+    #metodologia .pasos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .paso-item {
+      text-align: center;
+      padding: 40px 28px;
+      position: relative;
+    }
+    .paso-item:not(:last-child)::after {
+      content: '→';
+      position: absolute;
+      right: -8px;
+      top: 52px;
+      font-size: 1.4rem;
+      color: var(--teal);
+      opacity: 0.4;
+    }
+    .paso-num {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--teal);
+      color: var(--white);
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .paso-item h4 {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .paso-item p {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ── Por qué Consuelo ───────────────────────────────────── */
+    #diferenciadores .dif-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .dif-card {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 28px;
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+    .dif-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .dif-card h4 {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+    .dif-card p {
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    /* ── Tarifas ────────────────────────────────────────────── */
+    #tarifas .tarifas-intro {
+      max-width: 600px;
+    }
+    .tarifas-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .tarifa-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 20px;
+      text-align: center;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .tarifa-card:hover {
+      border-color: var(--teal);
+      box-shadow: 0 8px 24px rgba(42,107,107,0.1);
+    }
+    .tarifa-card.destacado {
+      border-color: var(--teal);
+      background: var(--teal-light);
+      position: relative;
+    }
+    .tarifa-card.destacado::before {
+      content: 'Más solicitado';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--teal);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 12px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+    .tarifa-nivel {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 12px;
+    }
+    .tarifa-precio {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--teal-dark);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .tarifa-unidad {
+      font-size: 0.75rem;
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
+    .tarifa-desc {
+      font-size: 0.78rem;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
+    .tarifas-nota {
+      background: var(--teal-light);
+      border-left: 3px solid var(--teal);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.875rem;
+      color: var(--teal-dark);
+    }
+    .tarifas-nota strong { display: block; margin-bottom: 4px; }
+
+    /* ── Contacto ───────────────────────────────────────────── */
+    #contacto .contacto-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 72px;
+      align-items: start;
+    }
+    .contacto-info h3 {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .contacto-info p {
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      margin-bottom: 32px;
+    }
+    .contacto-links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .contacto-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      transition: color 0.2s;
+    }
+    .contacto-link:hover { color: var(--teal); }
+    .contacto-link-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: var(--teal-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    /* Form */
+    .form-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .form-group label { font-size: 0.8rem; font-weight: 600; color: var(--text); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 11px 14px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      color: var(--text);
+      background: var(--white);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(42,107,107,0.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-group select { appearance: none; cursor: pointer; }
+    .form-submit {
+      width: 100%;
+      background: var(--teal);
+      color: var(--white);
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      margin-top: 4px;
+    }
+    .form-submit:hover { background: var(--teal-dark); transform: translateY(-1px); }
+    .form-submit:disabled { opacity: 0.6; cursor: default; transform: none; }
+    #form-msg {
+      margin-top: 12px;
+      font-size: 0.875rem;
+      text-align: center;
+      min-height: 20px;
+    }
+    #form-msg.ok    { color: var(--teal-dark); }
+    #form-msg.error { color: #C0392B; }
+
+    /* ── Manifiesto ─────────────────────────────────────────── */
+    #manifiesto {
+      position: relative;
+      padding: 120px 0;
+      overflow: hidden;
+      text-align: center;
+    }
+    #manifiesto .manif-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url("https://media.licdn.com/dms/image/v2/D4D16AQGwfY0LYM5-qQ/profile-displaybackgroundimage-shrink_350_1400/B4DZywG7o2IUAY-/0/1772481134187?e=1775692800&v=beta&t=uTa0S6tg0oYE2-joVjdHjFDqw0-6gOKM3s0MENDs8DM");
+      background-size: cover;
+      background-position: center 40%;
+      filter: brightness(0.45);
+    }
+    #manifiesto .manif-content {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    #manifiesto blockquote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.35;
+      margin-bottom: 24px;
+    }
+    #manifiesto cite {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-style: normal;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ── Footer ─────────────────────────────────────────────── */
+    footer {
+      background: var(--teal-dark);
+      color: rgba(255,255,255,0.65);
+      padding: 36px 0;
+      font-size: 0.82rem;
+    }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    /* ── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .hero-inner          { grid-template-columns: 1fr; text-align: center; }
+      .hero-photo-wrap     { order: -1; max-width: 220px; margin: 0 auto; }
+      .hero-badges         { justify-content: center; }
+      .hero-actions        { justify-content: center; }
+      .stats-grid          { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(2) { border-right: none; }
+      #sobre-mi .sobre-grid { grid-template-columns: 1fr; gap: 40px; }
+      #servicios .servicios-grid { grid-template-columns: 1fr; }
+      #metodologia .pasos-grid { grid-template-columns: repeat(2, 1fr); }
+      .paso-item:nth-child(2)::after { display: none; }
+      .paso-item:nth-child(4)::after { display: none; }
+      #diferenciadores .dif-grid { grid-template-columns: 1fr; }
+      .tarifas-grid        { grid-template-columns: repeat(2, 1fr); }
+      #contacto .contacto-grid { grid-template-columns: 1fr; gap: 40px; }
+      nav .nav-links       { display: none; }
+    }
+    @media (max-width: 560px) {
+      .section             { padding: 64px 0; }
+      .stats-grid          { grid-template-columns: repeat(2, 1fr); }
+      .tarifas-grid        { grid-template-columns: 1fr 1fr; }
+      .form-row            { grid-template-columns: 1fr; }
+      #metodologia .pasos-grid { grid-template-columns: 1fr; }
+      .paso-item::after    { display: none !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">Consuelo Aránguiz</span>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#metodologia">Metodología</a></li>
+        <li><a href="#tarifas">Tarifas</a></li>
+        <li><a href="#contacto" class="nav-cta">Cotizar proceso</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Psicóloga Laboral · Santiago, Chile</p>
+          <h1 class="hero-title">
+            Selección de personas<br />
+            <em>que realmente encajan.</em>
+          </h1>
+          <p class="hero-subtitle">
+            Acompaño a empresas en encontrar el talento adecuado — con rigor técnico, mirada estratégica y un trato profundamente humano.
+          </p>
+          <div class="hero-badges">
+            <span class="badge">11 años como independiente</span>
+            <span class="badge">100% remoto · Todo Chile</span>
+            <span class="badge">Informes en 48–72 hrs</span>
+          </div>
+          <div class="hero-actions">
+            <a href="https://wa.me/56989297668?text=Hola%20Consuelo%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proceso%20de%20selecci%C3%B3n" class="btn-primary" target="_blank" rel="noopener">
+              💬 Cotizar por WhatsApp
+            </a>
+            <a href="#servicios" class="btn-secondary">
+              Ver servicios →
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D03AQERG8DyY8ZwDw/profile-displayphoto-crop_800_800/B4DZf1Y6jeGYAI-/0/1752168639454?e=1775692800&v=beta&t=3QQrzLLs0qwUoEvpER4DrQomq2l5VHaGdk0FEbXju24"
+            alt="Consuelo Aránguiz Soto — Psicóloga Laboral"
+            class="hero-photo"
+          />
+          <div class="hero-photo-ring"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFIESTO -->
+  <section id="manifiesto">
+    <div class="manif-bg"></div>
+    <div class="manif-content">
+      <blockquote>
+        "Cuando las personas son auténticas,<br/>su potencial se multiplica.<br/>La libertad interior es la clave."
+      </blockquote>
+      <cite>— Consuelo Aránguiz Soto</cite>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-num">11<span>+</span></div>
+          <div class="stat-label">Años como independiente</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">48<span>h</span></div>
+          <div class="stat-label">Entrega de informes</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">30<span>d</span></div>
+          <div class="stat-label">Garantía de reposición</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">Trato directo conmigo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="section">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p class="tag">Sobre mí</p>
+          <h2 class="section-title">Una psicóloga que trabaja<br/> con las personas, no solo con los CVs.</h2>
+          <p>
+            Soy Consuelo Aránguiz Soto, Psicóloga Laboral con más de 11 años de trayectoria independiente en reclutamiento, selección y evaluación psicolaboral. He trabajado con consultoras de RRHH como ENERA, Círculo Humano, IntegralRH y VP Selección, y acompañado a clientes directos en rubros inmobiliario, deportivo, retail y educación.
+          </p>
+          <p>
+            Mi enfoque profesional está <strong>centrado en la persona</strong>, privilegiando la escucha activa, la empatía y el establecimiento de vínculos de confianza. Mi compromiso es genuino con el desarrollo personal y profesional de cada asesorado, ofreciendo acompañamiento desde un lugar de contención, claridad y seguridad a lo largo del proceso.
+          </p>
+          <p>
+            Cuando trabajas conmigo, trabajas directamente con la profesional. Sin intermediarios, sin juniors entregando resultados. Eso es lo que hace la diferencia.
+          </p>
+        </div>
+        <div class="credenciales">
+          <div class="credencial-item">
+            <div class="cred-icon">🎓</div>
+            <div>
+              <div class="cred-title">Psicóloga</div>
+              <div class="cred-detail">Universidad Gabriela Mistral · 2001–2007</div>
+            </div>
+          </div>
+          <div class="credencial-item">
+            <div class="cred-icon">📋</div>
+            <div>
+              <div class="cred-title">Diplomado en Gestión Estratégica de Evaluación y Selección de Personas</div>
+              <div class="cred-detail">En curso · 2026</div>
+              <span class="cred-badge">En formación</span>
+            </div>
+          </div>
+          <div class="credencial-item">
+            <div class="cred-icon">🧠</div>
+            <div>
+              <div class="cred-title">Diplomado en Psicoterapia Infanto Juvenil</div>
+              <div class="cred-detail">Universidad Autónoma de Chile · 2024–2025</div>
+            </div>
+          </div>
+          <div class="credencial-item">
+            <div class="cred-icon">💼</div>
+            <div>
+              <div class="cred-title">Psicóloga experta en Selección de Personal</div>
+              <div class="cred-detail">Profesional independiente desde 2015</div>
+              <div class="cred-detail">ENERA · Círculo Humano · IntegralRH · VP Selección</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section section-alt">
+    <div class="container">
+      <p class="tag">Servicios</p>
+      <h2 class="section-title">¿En qué te puedo ayudar?</h2>
+      <p class="section-sub">Servicios 100% remotos, disponibles para empresas en todo Chile. Trato directo con la profesional en cada etapa.</p>
+      <div class="servicios-grid">
+
+        <div class="servicio-card">
+          <div class="servicio-icon">🔍</div>
+          <h3>Reclutamiento y Selección completo</h3>
+          <p>Proceso end-to-end desde el levantamiento del perfil hasta la presentación de la terna con recomendación fundamentada.</p>
+          <ul class="servicio-list">
+            <li>Levantamiento y análisis del perfil del cargo</li>
+            <li>Reclutamiento activo en LinkedIn, BNE, Computrabajo</li>
+            <li>Filtro curricular y preselección</li>
+            <li>Entrevistas por competencias (STAR)</li>
+            <li>Informe ejecutivo con presentación de terna</li>
+            <li>Garantía de reposición por 30 días</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-icon">🧩</div>
+          <h3>Evaluación Psicolaboral</h3>
+          <p>Evaluación profunda por competencias para candidatos presentados por la empresa, con informe en 48 a 72 horas.</p>
+          <ul class="servicio-list">
+            <li>Entrevista psicolaboral por competencias</li>
+            <li>Pruebas psicométricas online según perfil</li>
+            <li>Evaluación de ajuste cultural y habilidades blandas</li>
+            <li>Verificación de referencias laborales</li>
+            <li>Informe psicolaboral claro y ejecutivo</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-icon">🎯</div>
+          <h3>Head Hunting</h3>
+          <p>Búsqueda activa y confidencial de perfiles clave o de difícil captación, con foco en ajuste técnico y cultural.</p>
+          <ul class="servicio-list">
+            <li>Mapeo y búsqueda proactiva de candidatos</li>
+            <li>Perfiles profesionales, jefaturas y subgerencias</li>
+            <li>Contacto y acercamiento personalizado</li>
+            <li>Evaluación psicolaboral incluida</li>
+          </ul>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-icon">🪄</div>
+          <h3>Asesoría Laboral & Empleabilidad</h3>
+          <p>Orientación para personas en búsqueda de empleo: entrevistas, CV y estrategia de postulación.</p>
+          <ul class="servicio-list">
+            <li>Preparación para entrevistas psicolaborales</li>
+            <li>Revisión y mejora de CV</li>
+            <li>Estrategia de búsqueda y postulación</li>
+            <li>Autoconocimiento y posicionamiento profesional</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- METODOLOGÍA -->
+  <section id="metodologia" class="section section-sand">
+    <div class="container">
+      <p class="tag">Metodología</p>
+      <h2 class="section-title">Un proceso claro de principio a fin</h2>
+      <p class="section-sub">Cada proceso está estructurado para maximizar la calidad de la decisión de contratación, con visibilidad en cada etapa.</p>
+      <div class="pasos-grid">
+        <div class="paso-item">
+          <div class="paso-num">1</div>
+          <h4>Levantamiento de perfil</h4>
+          <p>Entiendo el cargo, la cultura, el equipo y el contexto organizacional.</p>
+        </div>
+        <div class="paso-item">
+          <div class="paso-num">2</div>
+          <h4>Reclutamiento activo</h4>
+          <p>Búsqueda en plataformas y redes profesionales. Filtro curricular riguroso.</p>
+        </div>
+        <div class="paso-item">
+          <div class="paso-num">3</div>
+          <h4>Entrevista por competencias</h4>
+          <p>Metodología STAR. Evaluación de habilidades blandas y ajuste cultural.</p>
+        </div>
+        <div class="paso-item">
+          <div class="paso-num">4</div>
+          <h4>Evaluación psicométrica</h4>
+          <p>Pruebas online seleccionadas según el perfil y exigencias del cargo.</p>
+        </div>
+        <div class="paso-item">
+          <div class="paso-num">5</div>
+          <h4>Verificación de referencias</h4>
+          <p>Chequeo de referencias laborales con preguntas estructuradas.</p>
+        </div>
+        <div class="paso-item">
+          <div class="paso-num">6</div>
+          <h4>Informe y terna</h4>
+          <p>Informe ejecutivo + presentación de terna con recomendación profesional fundamentada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIADORES -->
+  <section id="diferenciadores" class="section">
+    <div class="container">
+      <p class="tag">¿Por qué Consuelo?</p>
+      <h2 class="section-title">Lo que me hace diferente</h2>
+      <p class="section-sub">No soy una consultora grande. Soy una profesional senior que trabaja directamente contigo, sin capas intermedias.</p>
+      <div class="dif-grid">
+        <div class="dif-card">
+          <div class="dif-icon">👁️</div>
+          <div>
+            <h4>Trato directo con la experta</h4>
+            <p>Cada evaluación, cada entrevista, cada informe lo hago yo. No hay juniors ni subcontrataciones. Tienes a la profesional en cada etapa del proceso.</p>
+          </div>
+        </div>
+        <div class="dif-card">
+          <div class="dif-icon">⏱️</div>
+          <div>
+            <h4>Entregas en 48 a 72 horas</h4>
+            <p>Los informes psicolaborales se entregan entre 48 y 72 horas hábiles tras cada entrevista. El proceso completo entre 7 y 12 días hábiles.</p>
+          </div>
+        </div>
+        <div class="dif-card">
+          <div class="dif-icon">🔄</div>
+          <div>
+            <h4>Garantía de reposición 30 días</h4>
+            <p>Si el candidato seleccionado se desvincula dentro de los primeros 30 días desde su ingreso, realizo un nuevo proceso sin costo adicional.</p>
+          </div>
+        </div>
+        <div class="dif-card">
+          <div class="dif-icon">🧭</div>
+          <div>
+            <h4>Foco en ajuste cultural</h4>
+            <p>No busco solo el perfil técnico. Evalúo el ajuste real entre la persona y la cultura de tu organización — porque ese es el factor que determina si alguien se queda y rinde.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARIFAS -->
+  <section id="tarifas" class="section section-alt">
+    <div class="container">
+      <p class="tag">Tarifas</p>
+      <h2 class="section-title">Transparencia en los precios</h2>
+      <p class="section-sub tarifas-intro">Trabajo con precios claros por nivel de cargo. Cada proceso incluye hasta 3 candidatos evaluados con proceso completo.</p>
+      <div class="tarifas-grid">
+        <div class="tarifa-card">
+          <div class="tarifa-nivel">Administrativo / Técnico</div>
+          <div class="tarifa-precio">10 UF</div>
+          <div class="tarifa-unidad">por proceso completo</div>
+          <div class="tarifa-desc">Analistas, asistentes, técnicos, operativos, aseo, conserjería.</div>
+        </div>
+        <div class="tarifa-card destacado">
+          <div class="tarifa-nivel">Profesional Junior</div>
+          <div class="tarifa-precio">15 UF</div>
+          <div class="tarifa-unidad">por proceso completo</div>
+          <div class="tarifa-desc">Profesionales recién egresados o con hasta 3 años de experiencia.</div>
+        </div>
+        <div class="tarifa-card">
+          <div class="tarifa-nivel">Jefatura</div>
+          <div class="tarifa-precio">20 UF</div>
+          <div class="tarifa-unidad">por proceso completo</div>
+          <div class="tarifa-desc">Cargos con reporte de equipo, supervisión y liderazgo operativo.</div>
+        </div>
+        <div class="tarifa-card">
+          <div class="tarifa-nivel">Subgerencia</div>
+          <div class="tarifa-precio">25 UF</div>
+          <div class="tarifa-unidad">por proceso completo</div>
+          <div class="tarifa-desc">Posiciones de alta responsabilidad y perfil estratégico.</div>
+        </div>
+      </div>
+      <div class="tarifas-nota">
+        <strong>¿Necesitas evaluaciones frecuentes?</strong>
+        Si tienes varios procesos al mes, tengo esquemas de retainer mensual desde $1.200.000 líquidos (hasta 3 procesos o 5 evaluaciones/mes). Conversemos.
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section section-sand">
+    <div class="container">
+      <div class="contacto-grid">
+        <div class="contacto-info">
+          <p class="tag">Contacto</p>
+          <h3>Cuéntame lo que necesitas</h3>
+          <p>Respondo en menos de 24 horas hábiles. Si necesitas algo urgente, escríbeme directamente por WhatsApp.</p>
+          <div class="contacto-links">
+            <a href="https://wa.me/56989297668" class="contacto-link" target="_blank" rel="noopener">
+              <span class="contacto-link-icon">💬</span>
+              +56 9 8929 7668
+            </a>
+            <a href="mailto:seleccion.cvas@gmail.com" class="contacto-link">
+              <span class="contacto-link-icon">✉️</span>
+              seleccion.cvas@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/consuelo-aranguiz-soto-11209222/" class="contacto-link" target="_blank" rel="noopener">
+              <span class="contacto-link-icon">💼</span>
+              LinkedIn — Consuelo Aránguiz Soto
+            </a>
+          </div>
+        </div>
+        <div class="form-card">
+          <form id="lead-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+              </div>
+              <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+56 9 XXXX XXXX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="servicio">Servicio de interés</label>
+              <select id="servicio" name="servicio">
+                <option value="">Selecciona un servicio...</option>
+                <option>Reclutamiento y Selección completo</option>
+                <option>Evaluación Psicolaboral</option>
+                <option>Head Hunting</option>
+                <option>Asesoría Laboral / Empleabilidad</option>
+                <option>Esquema de retainer mensual</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Cuéntame más *</label>
+              <textarea id="mensaje" name="mensaje" required placeholder="Describe brevemente lo que necesitas: cargo, perfil, urgencia, etc."></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="submit-btn">Enviar mensaje</button>
+            <div id="form-msg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Consuelo Aránguiz Soto</span>
+        <span>Psicóloga Laboral · Experta en Selección de Personal · Santiago, Chile</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Form submit ───────────────────────────────────────────
+    var APPS_SCRIPT_URL = "REEMPLAZAR_CON_URL_DEL_APPS_SCRIPT";
+
+    document.getElementById("lead-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      var btn = document.getElementById("submit-btn");
+      var msg = document.getElementById("form-msg");
+      btn.disabled = true;
+      btn.textContent = "Enviando...";
+      msg.textContent = "";
+      msg.className = "";
+
+      var data = {
+        nombre:   document.getElementById("nombre").value,
+        empresa:  document.getElementById("empresa").value,
+        email:    document.getElementById("email").value,
+        telefono: document.getElementById("telefono").value,
+        servicio: document.getElementById("servicio").value,
+        mensaje:  document.getElementById("mensaje").value,
+      };
+
+      fetch(APPS_SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify(data),
+      })
+      .then(function(r) { return r.json(); })
+      .then(function(res) {
+        if (res.ok) {
+          msg.textContent = "✓ Mensaje enviado. Te contactaré pronto.";
+          msg.className = "ok";
+          document.getElementById("lead-form").reset();
+        } else {
+          throw new Error(res.mensaje);
+        }
+      })
+      .catch(function(err) {
+        msg.textContent = "Error al enviar. Escríbeme a seleccion.cvas@gmail.com";
+        msg.className = "error";
+      })
+      .finally(function() {
+        btn.disabled = false;
+        btn.textContent = "Enviar mensaje";
+      });
+    });
+  </script>
+
+</body>
+</html>
