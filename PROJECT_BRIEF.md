@@ -1,7 +1,7 @@
 # PROJECT_BRIEF.md — Consuelo Aránguiz RRHH
 > Estado actual del proyecto. Actualizar al cierre de cada sesión.
 
-**Última actualización:** 22 marzo 2026
+**Última actualización:** 22 marzo 2026 (sesión 2)
 
 ---
 
@@ -49,6 +49,7 @@
 - [x] Cloudflare configurado como DNS intermediario (nameservers + 5 registros DNS para GitHub Pages)
 - [x] Email routing: `consuelo@cvas-consultora.cl` → `seleccion.cvas@gmail.com`
 - [x] Página web muestra `consuelo@cvas-consultora.cl` como email de contacto
+- [x] Imagen de fondo sección manifiesto: upscalada a 2560x640 y guardada local (`docs/bg-manifiesto.jpg`) — sin dependencia de LinkedIn
 
 ---
 
