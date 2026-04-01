@@ -479,8 +479,8 @@
     }
     .tarifas-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
       margin-bottom: 40px;
     }
     .tarifa-card {
@@ -540,14 +540,8 @@
       color: var(--text-mid);
       line-height: 1.5;
     }
-    .tarifas-evaluacion {
-      display: flex;
-      justify-content: center;
-      margin-top: 16px;
-    }
-    .tarifas-evaluacion .tarifa-card {
-      max-width: 280px;
-      width: 100%;
+    .tarifa-card.standalone {
+      border-left: 3px solid var(--teal);
     }
     .tarifas-nota {
       background: var(--teal-light);
@@ -735,6 +729,7 @@
       .paso-item:nth-child(4)::after { display: none; }
       #diferenciadores .dif-grid { grid-template-columns: 1fr; }
       .tarifas-grid        { grid-template-columns: repeat(2, 1fr); }
+      .tarifa-card.standalone { grid-column: span 2; max-width: 320px; margin: 0 auto; width: 100%; }
       #contacto .contacto-grid { grid-template-columns: 1fr; gap: 40px; }
       nav .nav-links       { display: none; }
     }
@@ -742,6 +737,7 @@
       .section             { padding: 64px 0; }
       .stats-grid          { grid-template-columns: repeat(2, 1fr); }
       .tarifas-grid        { grid-template-columns: 1fr 1fr; }
+      .tarifa-card.standalone { grid-column: span 2; }
       .form-row            { grid-template-columns: 1fr; }
       #metodologia .pasos-grid { grid-template-columns: 1fr; }
       .paso-item::after    { display: none !important; }
@@ -1066,9 +1062,7 @@
           <div class="tarifa-unidad">por proceso completo</div>
           <div class="tarifa-desc">Posiciones de alta responsabilidad y perfil estratégico.</div>
         </div>
-      </div>
-      <div class="tarifas-evaluacion">
-        <div class="tarifa-card">
+        <div class="tarifa-card standalone">
           <div class="tarifa-nivel">Evaluación Psicolaboral</div>
           <div class="tarifa-precio">2 UF</div>
           <div class="tarifa-unidad">por evaluación</div>
