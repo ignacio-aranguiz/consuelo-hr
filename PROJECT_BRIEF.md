@@ -1,7 +1,7 @@
 # PROJECT_BRIEF.md — Consuelo Aránguiz RRHH
 > Estado actual del proyecto. Actualizar al cierre de cada sesión.
 
-**Última actualización:** 23 marzo 2026 (sesión 3)
+**Última actualización:** 30 mayo 2026 (sesión 5)
 
 ---
 
@@ -51,6 +51,9 @@
 - [x] Página web muestra `consuelo@cvas-consultora.cl` como email de contacto
 - [x] Imagen de fondo sección manifiesto: foto bosque otoño upscalada (1302x640) sin texto bakeado (`docs/bg-manifiesto.jpg`)
 - [x] HTTPS activo en dominio custom (`Enforce HTTPS` habilitado en GitHub Pages)
+- [x] Tarifas actualizadas: Evaluación Psicolaboral (2 UF) agregada como card independiente; retainer corregido (eliminado "o 5 evaluaciones")
+- [x] Foto de perfil hero hosteada localmente (`docs/foto-perfil.jpg`) — eliminada dependencia LinkedIn (URLs expiran ~6 meses)
+- [x] Overlay oscuro en sección manifiesto (`rgba(15,35,30,0.58)`) — legibilidad garantizada sobre imagen bosque
 
 ---
 
@@ -87,6 +90,8 @@ consuelo-hr/
 ├── PROJECT_BRIEF.md          ← este archivo
 ├── docs/
 │   ├── index.html            ← landing page (fuente de verdad del frontend)
+│   ├── foto-perfil.jpg       ← foto de perfil hero (local — no depende de LinkedIn)
+│   ├── bg-manifiesto.jpg     ← imagen de fondo sección manifiesto
 │   └── CNAME                 ← www.cvas-consultora.cl
 ├── appscript/
 │   ├── Código.js             ← backend formulario (EN PRODUCCIÓN — cambios requieren deploy manual)
